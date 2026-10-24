@@ -10,13 +10,14 @@ Read and apply the [shared coaching rules](references/coaching-contract.md) befo
 
 ## Process
 
-1. Read the profile and existing plan in the private working folder. Create missing files from the [profile template](assets/athlete-profile.template.md) and [plan template](assets/plan.template.md) after gathering the essentials: goal, schedule, units, recent base, and relevant constraints.
+1. Read the profile, existing plan, and journal if the athlete keeps one in the private working folder. Create missing profile and plan files from the [profile template](assets/athlete-profile.template.md) and [plan template](assets/plan.template.md) after gathering the essentials: goal, schedule, units, recent base, and relevant constraints. When setting up a new working folder, offer the optional [journal template](assets/journal.template.md); do not require journaling.
 2. Retrieve up to four recent weeks of confirmed training under the shared data rules. If less is available, state the limitation and build a provisional conservative plan from the confirmed base, asking only for material gaps. Never substitute lifetime peak fitness for recent training.
-3. Fit the weekly structure around available days, family/work constraints, and strength or other sports. Use strength-integration when scheduling needs reconciliation.
-4. Define progression from recent frequency, volume, intensity, terrain, and recovery. Use the shared unit-invariant progression guidance. Schedule easier weeks when appropriate, with roughly every three to four weeks as a starting heuristic rather than an obligation. Keep most running easy; avoid consecutive hard running days.
-5. Phase toward the goal date when relevant. If the goal is unrealistic for the available base and time, propose a revised goal or timeline rather than compressing progression.
-6. Draft the current phase, weekly structure, progression rules, and next few weeks. Include dated session rows with stable IDs, distance or duration targets and units, effort, and status so the plan can be reviewed quantitatively. Separate tentative longer-term ideas from accepted sessions.
-7. Save the initial plan or revisions once accepted. Log previous and new values for revisions. Preserve athlete edits, completed targets, and session IDs.
+3. Read recent journal entries and relevant standing sections alongside the activity data. Treat repeated feel and body-note patterns, sleep and life constraints, fueling outcomes, and confirmed lessons as planning evidence. If journal reports and device data conflict, preserve both and explain which evidence drives the proposal. A journal note does not alter a target until the athlete accepts the change.
+4. Fit the weekly structure around available days, family/work constraints, and strength or other sports. Use strength-integration when scheduling needs reconciliation.
+5. Define progression from recent frequency, volume, intensity, terrain, and recovery. Use the shared unit-invariant progression guidance. Schedule easier weeks when appropriate, with roughly every three to four weeks as a starting heuristic rather than an obligation. Keep most running easy; avoid consecutive hard running days.
+6. Phase toward the goal date when relevant. If the goal is unrealistic for the available base and time, propose a revised goal or timeline rather than compressing progression.
+7. Draft the current phase, weekly structure, progression rules, and next few weeks. Include dated session rows with stable IDs, distance or duration targets and units, effort, and status so the plan can be reviewed quantitatively. Separate tentative longer-term ideas from accepted sessions.
+8. Save the initial plan or revisions once accepted. Log previous and new values for revisions. Preserve athlete edits, completed targets, and session IDs.
 
 ## Output
 

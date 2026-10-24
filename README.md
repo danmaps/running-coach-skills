@@ -10,9 +10,9 @@ Requires Node.js with `npx` and Git. Run this from the private folder where you 
 npx skills add danmaps/running-coach-skills
 ```
 
-Select the skills and agent in the prompts. Installation is scoped to the current project by default. Each skill includes its required reference files; plan-builder also includes the profile and plan templates.
+Select the skills and agent in the prompts. Installation is scoped to the current project by default. Each skill includes its required reference files; plan-builder also includes the profile, plan, and optional journal templates.
 
-Install all nine skills for a specific agent without prompts:
+Install all ten skills for a specific agent without prompts:
 
 ```bash
 # Codex
@@ -41,13 +41,14 @@ Copy this prompt into an agent that can run terminal commands:
 ```text
 Install the running coach skills from danmaps/running-coach-skills using
 npx skills add danmaps/running-coach-skills. Target only the agent I am
-using and install all nine skills in this project. Use --skill '*' and
+using and install all ten skills in this project. Use --skill '*' and
 --agent with the CLI's identifier for this agent, plus --yes. Keep this
 installation project-scoped unless I request global installation.
 Verify the result with npx skills list. If Node.js, Git, or this agent's
 identity is unavailable, explain what is missing rather than guessing.
 Then use plan-builder to help me create athlete-profile.md and plan.md
-in a private working folder from its bundled templates. Check which
+in a private working folder from its bundled templates. Offer an
+optional journal.md from the bundled journal template. Check which
 training-data sources you can actually access; use an export or manual
 log when needed. Propose the plan before saving accepted targets.
 ```
@@ -73,6 +74,7 @@ You can also ask “Review my last week” or “What should I run today?” Res
 | [workout-sizer](skills/workout-sizer/SKILL.md) | Recommend a session from recent load and the accepted plan. |
 | [route-builder](skills/route-builder/SKILL.md) | Find routes and check distance, access, and current conditions. |
 | [post-run-debrief](skills/post-run-debrief/SKILL.md) | Review a completed run and record the takeaway. |
+| [running-journal](skills/running-journal/SKILL.md) | Keep a collaborative journal of feel, body notes, life context, fueling, patterns, and lessons for planning. |
 | [race-prep](skills/race-prep/SKILL.md) | Compare races and prepare pacing, taper, and logistics. |
 | [strength-integration](skills/strength-integration/SKILL.md) | Coordinate running, strength, and cross-training. |
 | [recovery-read](skills/recovery-read/SKILL.md) | Review personal recovery trends alongside training and reported feel. |
@@ -82,6 +84,7 @@ You can also ask “Review my last week” or “What should I run today?” Res
 
 - **`athlete-profile.md`**: goals, schedule, preferences, units, and data sources.
 - **`plan.md`**: weekly structure, dated session targets, observations, and accepted changes.
+- **`journal.md`**: optional collaborative record of feel, body notes, sleep, life context, fueling, and lessons. The agent drafts confirmed objective details; the athlete supplies and owns the subjective record. Journal evidence can support a proposed plan change, but the plan remains the source of truth for targets.
 - **`routes.md`**: optional route library with distance sources and access checks.
 
 Keep these files in a private working folder outside the public repository. The assistant records observations during requested reviews and asks before changing future training targets. Your own edits take effect immediately.
