@@ -1,38 +1,27 @@
 ---
 name: plan-builder
-description: Build and revise a runner's training plan as a shared living document. Use when the user wants a new training plan, wants to change their goal, or wants to revise an existing plan.
+description: Build or revise a runner's training plan. Use for a new plan, a changed goal, or revisions to an existing plan.
 ---
 
 # Plan Builder
 
-Build the user's training plan into their plan document (`plan.md`, from `templates/plan.template.md`) and revise it over time. The plan is a collaboration: the agent drafts, the user edits and decides, the agent writes accepted changes back.
+Read and apply the [shared coaching rules](../../references/coaching-contract.md) before proceeding.
 
-## Before you start
 
-1. Read the athlete profile (`athlete-profile.md`). If it does not exist, help the user create it from the template first. Do not invent missing values; ask.
-2. Gather the user's recent training yourself (last 4 weeks minimum) from the data sources in the profile, in the README's priority order: platform health store (Apple Health or Health Connect) first, then Strava (MCP connection on paid plans, or the GPX files from a bulk export), then other services, then a manual log. The user should not have to report their own workouts to you. A plan is sized from the user's actual current base, never from their peak fitness or a generic template.
-3. If a plan already exists, read it. Revisions start from the current plan, not from scratch.
+## Process
 
-## Building a plan
+1. Read the profile and existing plan in the private working folder. Create missing files from the [profile template](../../templates/athlete-profile.template.md) and [plan template](../../templates/plan.template.md) after gathering the essentials: goal, schedule, units, recent base, and relevant constraints.
+2. Retrieve up to four recent weeks of confirmed training under the shared data rules. If less is available, state the limitation and build a provisional conservative plan from the confirmed base, asking only for material gaps. Never substitute lifetime peak fitness for recent training.
+3. Fit the weekly structure around available days, family/work constraints, and strength or other sports. Use strength-integration when scheduling needs reconciliation.
+4. Define progression from recent frequency, volume, intensity, terrain, and recovery. Use the shared unit-invariant progression guidance. Schedule easier weeks when appropriate, with roughly every three to four weeks as a starting heuristic rather than an obligation. Keep most running easy; avoid consecutive hard running days.
+5. Phase toward the goal date when relevant. If the goal is unrealistic for the available base and time, propose a revised goal or timeline rather than compressing progression.
+6. Draft the current phase, weekly structure, progression rules, and next few weeks. Include dated session rows with stable IDs, distance or duration targets and units, effort, and status so the plan can be reviewed quantitatively. Separate tentative longer-term ideas from accepted sessions.
+7. Save the initial plan or revisions once accepted. Log previous and new values for revisions. Preserve athlete edits, completed targets, and session IDs.
 
-- Anchor everything to the goal and date in the profile. If no goal event is chosen, build toward the stated goal type and note the open decision in the plan.
-- Set the weekly structure around the user's real schedule in the profile: available days, long run day, cross-training days. A plan the user's week cannot hold is a bad plan.
-- Progression follows the ambition setting in the profile (default conservative):
-  - Increase the long run by roughly 0.5 to 1 unit (mi or km per profile units) at a time, not every week.
-  - Increase total weekly volume gradually; avoid jumps the recent base does not support.
-  - Schedule an easier week roughly every 3 to 4 weeks.
-- Keep most running easy. Hard sessions, if any, are a small share of the week and never on back-to-back days.
-- Phase the plan toward the goal date (base, build, peak, taper, race week) when a date exists.
-- Fill in the plan document completely: goal, phase, current base, weekly structure table, progression rules, and the next few weeks at target level (not a rigid day-by-day for the whole season).
+## Output
 
-## Revising a plan
-
-- Propose changes in conversation first, with the reason. Write to the plan only after the user accepts.
-- Log every accepted change in the plan's adjustments log with the date and reason.
-- When the user edits the plan directly, treat their edit as the decision and work from it.
+Give the goal, current base and evidence limitations, weekly structure, and next dated targets. Explain any proposed change briefly. Use the profile's voice preference; default to direct and specific.
 
 ## Guardrails
 
-- Standard training guidance only. No diagnosis, no injury-risk assessment, no medical advice. If the user reports pain or a possible injury, advise them to see a qualified professional and offer to pause or soften the plan.
-- Never promise a finishing time or an outcome.
-- Match the voice preference in the profile. Default: direct, specific, numbers first.
+Provide general training guidance only. Never diagnose, assess medical clearance, or promise a finish time. Follow the shared symptom exception before prescribing further training.
