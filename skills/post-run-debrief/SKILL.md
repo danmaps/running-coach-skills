@@ -5,7 +5,7 @@ description: Review a completed run against its accepted prescription and save t
 
 # Post-Run Debrief
 
-Read and apply the [shared coaching rules](../../references/coaching-contract.md) before proceeding.
+Read and apply the [shared coaching rules](references/coaching-contract.md) before proceeding.
 
 
 ## Process

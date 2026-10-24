@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 import re
 from urllib.parse import unquote
+from sync_resources import bundled_resources
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -42,6 +43,9 @@ def validate():
         if set(fields) != {'name', 'description'} or not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', name) or len(name) > 64 or name != path.parent.name or name in names:
             errors.append(f'{path.relative_to(ROOT)}: invalid name or required fields')
         names.add(name)
+    for source, target in bundled_resources(ROOT):
+        if not target.exists() or target.read_bytes() != source.read_bytes():
+            errors.append(f'{target.relative_to(ROOT)}: missing or stale bundle; run python scripts/sync_resources.py')
     # Strip fenced code before inspecting inline Markdown links.
     for path in ROOT.rglob('*.md'):
         if '.git' in path.parts:

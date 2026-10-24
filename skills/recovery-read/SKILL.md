@@ -5,7 +5,7 @@ description: Read a runner's recovery signals (sleep, resting heart rate, and re
 
 # Recovery Read
 
-Read and apply the [shared coaching rules](../../references/coaching-contract.md) before proceeding.
+Read and apply the [shared coaching rules](references/coaching-contract.md) before proceeding.
 
 Watch the user's recovery signals the way a good coach watches an athlete's face: quietly, in context, and only speaking up when a pattern is real.
 
