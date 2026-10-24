@@ -5,7 +5,7 @@ description: "Help a runner choose a goal race and prepare for it: course evalua
 
 # Race Prep
 
-Read and apply the [shared coaching rules](../../references/coaching-contract.md) before proceeding.
+Read and apply the [shared coaching rules](references/coaching-contract.md) before proceeding.
 
 Own the season's target: choosing the race, understanding the course, and arriving at the start line prepared.
 

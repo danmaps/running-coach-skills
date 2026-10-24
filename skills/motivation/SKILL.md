@@ -5,7 +5,7 @@ description: Offer brief encouragement and sourced Coach Chris Bennett quotes. U
 
 # Motivation
 
-Read and apply the [shared coaching rules](../../references/coaching-contract.md) before proceeding.
+Read and apply the [shared coaching rules](references/coaching-contract.md) before proceeding.
 
 
 ## Process

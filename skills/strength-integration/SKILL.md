@@ -5,7 +5,7 @@ description: Coordinate strength training and cross-training with a runner's tra
 
 # Strength Integration
 
-Read and apply the [shared coaching rules](../../references/coaching-contract.md) before proceeding.
+Read and apply the [shared coaching rules](references/coaching-contract.md) before proceeding.
 
 Schedule the user's strength and cross-training around the run plan, using the schedule in the athlete profile and the weekly structure in the plan document.
 

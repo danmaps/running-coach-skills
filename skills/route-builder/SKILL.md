@@ -5,7 +5,7 @@ description: Find, verify, and save running routes near the user, matched to a n
 
 # Route Builder
 
-Read and apply the [shared coaching rules](../../references/coaching-contract.md) before proceeding.
+Read and apply the [shared coaching rules](references/coaching-contract.md) before proceeding.
 
 Build routes from the user's location, wherever that is. This skill is location-aware, not location-specific: it takes the location and home area from the athlete profile (or the place the user names for this request) and does the lookup live.
 

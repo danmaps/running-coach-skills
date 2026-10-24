@@ -5,7 +5,7 @@ description: Recommend a running session for a named day from recent load and th
 
 # Workout Sizer
 
-Read and apply the [shared coaching rules](../../references/coaching-contract.md) before proceeding.
+Read and apply the [shared coaching rules](references/coaching-contract.md) before proceeding.
 
 
 ## Process

@@ -5,12 +5,12 @@ description: Build or revise a runner's training plan. Use for a new plan, a cha
 
 # Plan Builder
 
-Read and apply the [shared coaching rules](../../references/coaching-contract.md) before proceeding.
+Read and apply the [shared coaching rules](references/coaching-contract.md) before proceeding.
 
 
 ## Process
 
-1. Read the profile and existing plan in the private working folder. Create missing files from the [profile template](../../templates/athlete-profile.template.md) and [plan template](../../templates/plan.template.md) after gathering the essentials: goal, schedule, units, recent base, and relevant constraints.
+1. Read the profile and existing plan in the private working folder. Create missing files from the [profile template](assets/athlete-profile.template.md) and [plan template](assets/plan.template.md) after gathering the essentials: goal, schedule, units, recent base, and relevant constraints.
 2. Retrieve up to four recent weeks of confirmed training under the shared data rules. If less is available, state the limitation and build a provisional conservative plan from the confirmed base, asking only for material gaps. Never substitute lifetime peak fitness for recent training.
 3. Fit the weekly structure around available days, family/work constraints, and strength or other sports. Use strength-integration when scheduling needs reconciliation.
 4. Define progression from recent frequency, volume, intensity, terrain, and recovery. Use the shared unit-invariant progression guidance. Schedule easier weeks when appropriate, with roughly every three to four weeks as a starting heuristic rather than an obligation. Keep most running easy; avoid consecutive hard running days.

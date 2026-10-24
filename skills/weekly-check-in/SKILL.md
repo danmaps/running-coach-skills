@@ -5,7 +5,7 @@ description: Compare a runner's completed week with their accepted plan. Use whe
 
 # Weekly Check-In
 
-Read and apply the [shared coaching rules](../../references/coaching-contract.md) before proceeding.
+Read and apply the [shared coaching rules](references/coaching-contract.md) before proceeding.
 
 
 ## Process
