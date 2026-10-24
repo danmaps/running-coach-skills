@@ -53,7 +53,7 @@ The single source of personal context for the running coach skills. The user own
 - Ambition: conservative | standard | ambitious (default: conservative; same safety constraints at every setting)
 - Voice: direct and data-first | encouraging | detailed and analytical
 - Check-in cadence: weekly | per workout | on request (preference only; scheduling requires a supported automation)
-- Journal: off | on request | after runs (default: on request)
+- Journal: off | on request | after runs (default: on request; off disables reading and writing unless explicitly requested now; on request allows reading but no automatic entries; after runs permits updates during requested debriefs)
 - Motivational language: off | on request | enabled (default: on request)
 - What the user does NOT want (e.g. no motivational language, no daily messages):
 

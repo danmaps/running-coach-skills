@@ -25,7 +25,7 @@ Own the season's target: choosing the race, understanding the course, and arrivi
 ## Race-day plan
 
 - Pacing: set an effort-based plan from the user's recent training (long run pace and effort, recent workout data). Start controlled; the first portion should feel easier than goal effort. Never promise a finish time; give a pacing range and the reasoning.
-- Fueling and hydration: standard guidance for the distance, practiced in training first. Nothing new on race day.
+- Fueling and hydration: before proposing a strategy, read the existing journal's fueling playbook, relevant dated training entries, and race reflections when the shared journal-preference rules permit reading. This applies when race-prep runs alone; no running-journal skill is required. Cite the entry dates supporting a choice, keep one-off experiments provisional, and account for reported tolerances or problems without inventing a diagnosis. If no journal is available, reading is disabled, or the history is incomplete, say what is unknown and ask only for the material missing details. Base the proposal on practiced options; nothing new on race day. Reading does not authorize journal updates or changes to accepted targets.
 - Course notes: where the climbs, descents, and aid stations are, from the official course info gathered earlier.
 
 ## Guardrails

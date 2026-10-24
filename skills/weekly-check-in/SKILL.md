@@ -10,7 +10,7 @@ Read and apply the [shared coaching rules](references/coaching-contract.md) befo
 
 ## Process
 
-1. Read the profile, dated session ledger, observations, adjustments log, and journal entries for the review period when a journal is kept. Establish the review period in the athlete's timezone using the configured week start. Review the last completed calendar week by default; label a rolling seven-day or partial-week review explicitly.
+1. Read the profile, dated session ledger, observations, adjustments log, and journal entries for the review period when a journal is kept and reading is permitted by the shared journal-preference rules. Establish the review period in the athlete's timezone using the configured week start. Review the last completed calendar week by default; label a rolling seven-day or partial-week review explicitly.
 2. Retrieve that period and the prior comparable period using the shared data rules. Deduplicate mirrored activities before totals. Report coverage and freshness; distinguish unknown sessions from skipped sessions and rest.
 3. Match actual activities to dated sessions by saved IDs and local dates. Ask when matches are ambiguous. Keep unplanned runs visible and count each actual run only once. Use the accepted target in effect before the session, including logged changes.
 4. Compare planned vs actual sessions, distance and/or duration, and long run. Do not invent planned mileage for duration-only sessions; show distance and duration separately. Where coverage is incomplete, label actuals as observed minimums and withhold unsupported completion percentages.

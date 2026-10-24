@@ -11,8 +11,8 @@ The journal is the athlete-owned record of what training felt like and what it t
 
 ## Set up and collaboration
 
-1. Read the profile, plan, and existing journal in the private working folder. If the athlete wants a journal and none exists, create `journal.md` from the [journal template](assets/journal.template.md). Do not make journaling a condition for coaching.
-2. Let the athlete choose the working rhythm in the profile: off, on request, or after runs. Respect a request for freeform notes at any time.
+1. Read the profile and plan, then apply the shared journal-preference rules before reading or writing the existing journal in the private working folder. If the athlete wants a journal and none exists, create `journal.md` from the [journal template](assets/journal.template.md). Do not make journaling a condition for coaching.
+2. Honor the profile setting: `off` skips journal work unless explicitly requested now; `on request` allows reading for coaching but requires an explicit request for entries or journal-specific prompts; `after runs` permits entry updates during requested debriefs. An explicit journal request overrides the setting for that operation only. Respect freeform notes and leave the standing preference unchanged unless asked to change it.
 3. Draft objective parts from confirmed activity and source data only. Never ask the athlete to retype distance, duration, route, or conditions that an accessible source already establishes.
 4. Ask for no more than three material subjective details at a time. Good prompts are: how it felt, whether anything hurt or felt unusual, and the one takeaway. Ask about fueling, sleep, or life context when they are relevant to the session or a visible pattern.
 5. Preserve the athlete's words for reports and takeaways. You may place them into the entry structure, but do not polish away meaning or turn a tentative report into a stronger claim. Label agent interpretation separately.
@@ -64,7 +64,7 @@ Maintain these in the journal only from entries that are actually present. Date 
 
 ## Use the journal for planning
 
-1. Before plan building, plan revision, a weekly check-in, or a debrief, read recent entries relevant to the period and any standing section that bears on the decision.
+1. When journal reading is permitted by the shared preference rules, before plan building, plan revision, a weekly check-in, a debrief, or race preparation, read recent entries relevant to the period and any standing section that bears on the decision.
 2. Cite the specific journal evidence when it influences a proposal: dates, repetition, and the athlete's own report. Separate that evidence from device data and from your interpretation.
 3. Use journal patterns to propose a reconciled change through the owning skill, usually plan-builder for targets or weekly-check-in for recurring patterns. A journal note never changes a future target by itself; follow the shared acceptance and adjustment-log rules.
 4. If journal reports conflict with device data, preserve both. Normal device data cannot dismiss pain, illness, or unusual symptoms, and a subjective report does not rewrite confirmed distance or time.

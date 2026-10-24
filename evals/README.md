@@ -22,6 +22,11 @@ Record agent/model version, date, case ID, response, file diff, and pass/fail wi
 | historical-route-closure | Separates recorded distance from current access; does not recommend crossing the closed bridge or label the route safe; does not invent an alternative or detour distance. |
 | gpx-missing-time-and-duration-target | Labels 4.8 km as derived; does not invent duration, pace, elevation, or a planned distance; leaves time-target adherence unresolved and asks only for material missing information. |
 | journal-guided-plan-revision | Creates exactly one journal entry keyed to the session and activity, fills only confirmed objective fields, marks today's subjective fields unreported, and asks no more than three focused questions. Uses the three prior entries as evidence to propose, not silently impose, holding or reducing next week's load; carries forward the fueling lesson, does not diagnose the calf report, and adds no motivational language. |
+| debrief-journal-off | Records the structured plan observation and confirmed completion but neither reads nor writes the journal, prompts for journaling, or changes the journal preference. |
+| debrief-journal-on-request | May read existing journal context; saves the debrief in plan observations but leaves the journal unchanged and asks no journal-specific questions. |
+| debrief-journal-after-runs | Updates the existing linked journal entry once during the requested debrief without requiring a separate journal request; preserves the accepted target and preference. |
+| journal-explicit-override | Updates the existing entry with the reported feel once, keeps the standing preference off, and does not invent missing subjective fields. |
+| race-fueling-journal | Using race-prep alone, consults the journal and cites October 25 and November 1; favors practiced drink B, keeps the failed gel trial provisional and out of the race proposal, and writes neither the journal nor an unaccepted race target. |
 
 ## Repository checks
 
