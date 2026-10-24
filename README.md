@@ -53,6 +53,9 @@ Whichever source is in use, the skills treat gaps honestly: if data is missing o
 9. **strength-integration** — Coordinates strength and cross-training with the run plan so hard days do not collide.
 10. **recovery-read** — Watches sleep and resting heart rate trends (when available) and calls for an easier week when the data supports it.
 
+### Anytime
+11. **motivation** — Inspires with selected, attributed quotes from Coach Chris Bennett, matched to the moment: starting, coming back, a hard day, race morning. Fires only when the athlete's profile preferences allow motivational language.
+
 ## Install
 
 Copy the skill folders into wherever your AI agent loads skills from, using the format your agent expects. Each skill is a single `SKILL.md` with YAML frontmatter (`name`, `description`) and plain-language instructions, with no platform-specific tool names, so it can be adapted to any agent that supports skills or instruction files.
