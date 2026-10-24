@@ -5,6 +5,8 @@ description: Coordinate strength training and cross-training with a runner's tra
 
 # Strength Integration
 
+Read and apply the [shared coaching rules](../../references/coaching-contract.md) before proceeding.
+
 Schedule the user's strength and cross-training around the run plan, using the schedule in the athlete profile and the weekly structure in the plan document.
 
 ## Principles
@@ -17,10 +19,10 @@ Schedule the user's strength and cross-training around the run plan, using the s
 
 ## Process
 
-1. Read the profile's cross-training section and the plan's weekly structure.
+1. Read the profile's cross-training section, the plan's weekly structure and dated sessions, and recent load under the shared data rules. Include actual strength/cross-training intensity and reported soreness; do not treat all non-running exercise as recovery.
 2. Lay the week out with run sessions fixed first (long run, any workout, easy runs), then place strength and cross-training in the gaps that follow the principles.
-3. When the check-in shows a pattern (long runs consistently flat, soreness carrying into workouts), name the likely scheduling cause and propose the move.
-4. Write accepted changes into the plan's weekly structure table.
+3. When a pattern appears, identify a possible scheduling contribution without claiming causation. Reconcile with recovery-read and the accepted running plan before proposing one change.
+4. Write accepted changes into the weekly structure and affected dated sessions. Retain session IDs and log previous/new targets or dates. Save factual observations separately.
 
 ## Guardrails
 

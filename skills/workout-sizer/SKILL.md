@@ -1,38 +1,26 @@
 ---
 name: workout-sizer
-description: Size a single running workout for a specific day, based on the runner's recent training load, their plan, and that day's conditions. Use when the user asks what to run today, tomorrow, or on a named day.
+description: Recommend a running session for a named day from recent load and the accepted plan. Use for questions such as what to run today or tomorrow.
 ---
 
 # Workout Sizer
 
-Give the user one concrete session for one day: distance or duration, effort, and any structure, sized from their actual recent training.
+Read and apply the [shared coaching rules](../../references/coaching-contract.md) before proceeding.
 
-## Inputs
 
-- The day the user names (ask if they have not named one).
-- The athlete profile: units, schedule, preferences, ambition setting.
-- The plan document: what this point in the week or phase calls for, especially the long run target.
-- The last 2 to 3 weeks of training, which you gather from the user's data sources in the README's priority order (platform health store first, then Strava via MCP on paid plans or GPX export, then other services or a manual log): session count, distances, longest recent run, days since the last hard or long effort.
-- Conditions for that day at the user's location: forecast temperature, precipitation, wind, air quality. Hand adjustments to the weather-adjuster skill's rules when conditions are notable.
+## Process
 
-## Sizing rules
-
-- The long run grows from the user's longest recent run in small steps (roughly 0.5 to 1 unit at the conservative setting), and only if recent weeks support it. A runner on one run per week gets a long run near their current longest, not a leap.
-- Easy runs stay clearly shorter than the long run.
-- Total for the day must make sense inside the user's current weekly volume, not just on its own.
-- Effort is prescribed by feel: conversational (full sentences possible) for easy and long runs. Give a time estimate range if the user's typical easy pace is known; otherwise stay with effort and distance.
-- Build in permission to cut the session short at a named fallback distance. State it as part of the plan, not as failure.
+1. Resolve the requested local date and timezone. Use today when the athlete says today; ask only if the date is genuinely ambiguous.
+2. Read the profile, accepted dated session, adjustments log, and relevant observations. Retrieve the last two to three weeks of training with coverage notes. Work from the saved prescription across conversations, surfacing any conflict with remembered chat.
+3. Reconcile recent load, time since a hard or long effort, reported feel, recovery trends if available, strength commitments, and schedule into one recommendation. Consider known route/access or safety constraints without assuming unverified conditions. Rest or holding the target is a valid result.
+4. Keep the session within the supported weekly volume. Apply the shared unit-invariant progression rule only when an increase is justified; a runner on one run per week does not automatically get a longer long run. For return after illness, injury, or a layoff, avoid automatic progression or rehabilitation programming.
+5. Prescribe effort by feel, such as full-sentence conversation for an easy run. Use pace only when recent comparable data supports it. Include a shorter distance or duration fallback when appropriate; do not make every session a distance goal.
+6. If the athlete accepts a new or revised prescription, save it in the dated session ledger, retaining its stable ID, and log any change from an existing target. A request to save a specific change already authorizes it. Do not overwrite the accepted plan just because an alternative was suggested.
 
 ## Output
 
-- Day and session type.
-- Target distance (and fallback distance).
-- Effort guidance and any simple structure (walk breaks, warm-up).
-- Time and conditions note: best window of the day, hydration and clothing notes matched to the forecast.
-- One line tying the session to the plan (what it is for).
+Give the date, session type, distance or duration with units, effort and structure, fallback, and one line explaining its purpose. Identify material uncertainty. Return one session or rest recommendation.
 
 ## Guardrails
 
-- Standard guidance only; no diagnosis or injury assessment.
-- Never size a workout from the user's historical peak. Recent base only.
-- If the user is returning from illness, injury, or a layoff the profile or conversation mentions, size down and say why.
+Never prescribe from historical peak fitness. Do not promise safety, diagnose, or dismiss symptoms because wearable data looks normal. Follow the shared symptom exception.

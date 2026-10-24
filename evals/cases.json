@@ -1,0 +1,309 @@
+[
+  {
+    "id": "mirrored-run",
+    "skills": [
+      "weekly-check-in"
+    ],
+    "request": "Review my completed week, November 2 through November 8, 2026.",
+    "context": {
+      "timezone": "America/Los_Angeles",
+      "units": "km",
+      "week_start": "Monday",
+      "accepted_sessions": [
+        {
+          "id": "2026-11-03-a",
+          "date": "2026-11-03",
+          "type": "easy",
+          "target": "5 km",
+          "effort": "conversational",
+          "status": "planned"
+        }
+      ],
+      "primary_source": "watch",
+      "sources": [
+        {
+          "name": "watch",
+          "coverage": "complete for review period",
+          "last_sync": "2026-11-09T08:00:00-08:00",
+          "activities": [
+            {
+              "id": "w1",
+              "start": "2026-11-03T07:00:00-08:00",
+              "distance_km": 5,
+              "moving_minutes": 32,
+              "type": "run"
+            }
+          ]
+        },
+        {
+          "name": "service",
+          "coverage": "complete for review period",
+          "activities": [
+            {
+              "id": "s1",
+              "origin_id": "w1",
+              "start": "2026-11-03T07:00:00-08:00",
+              "distance_km": 5,
+              "moving_minutes": 32,
+              "type": "run"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "stale-empty-feed",
+    "skills": [
+      "weekly-check-in"
+    ],
+    "request": "How did I do November 2 through November 8, 2026?",
+    "context": {
+      "timezone": "America/Los_Angeles",
+      "units": "km",
+      "accepted_sessions": [
+        {
+          "id": "2026-11-03-a",
+          "date": "2026-11-03",
+          "target": "5 km",
+          "status": "planned"
+        }
+      ],
+      "sources": [
+        {
+          "name": "watch",
+          "last_sync": "2026-10-25T08:00:00-07:00",
+          "coverage": "ends October 25",
+          "activities": []
+        }
+      ],
+      "other_accessible_sources": [],
+      "athlete_confirmation": null
+    }
+  },
+  {
+    "id": "repeat-review",
+    "skills": [
+      "post-run-debrief",
+      "weekly-check-in"
+    ],
+    "request": "Review that same run again and save the debrief. It felt easy, with no pain.",
+    "context": {
+      "timezone": "America/Los_Angeles",
+      "units": "km",
+      "accepted_sessions": [
+        {
+          "id": "2026-11-03-a",
+          "date": "2026-11-03",
+          "target": "5 km",
+          "effort": "conversational",
+          "status": "completed",
+          "activity_ids": [
+            "w1"
+          ]
+        }
+      ],
+      "activity": {
+        "id": "w1",
+        "date": "2026-11-03",
+        "distance_km": 5,
+        "moving_minutes": 32
+      },
+      "observations": [
+        {
+          "key": "2026-11-03-a/w1",
+          "actual": "5 km / 32 min moving",
+          "feel": "not yet reported"
+        }
+      ],
+      "adjustments": [],
+      "source_coverage": "complete for activity"
+    }
+  },
+  {
+    "id": "display-unit-switch",
+    "skills": [
+      "workout-sizer"
+    ],
+    "request": "Display my accepted next long run in miles instead of kilometers and save the display change.",
+    "context": {
+      "units": "km",
+      "timezone": "America/Los_Angeles",
+      "accepted_sessions": [
+        {
+          "id": "2026-11-08-a",
+          "date": "2026-11-08",
+          "target": "10 km",
+          "effort": "easy",
+          "status": "planned"
+        }
+      ],
+      "previous_long_run": "9.2 km",
+      "accepted_increase": "0.8 km",
+      "new_training_target_requested": false
+    }
+  },
+  {
+    "id": "symptoms-with-normal-wearables",
+    "skills": [
+      "recovery-read",
+      "workout-sizer"
+    ],
+    "request": "My wearable looks normal but my calf hurts while walking. What should I run today?",
+    "context": {
+      "today": "2026-11-03",
+      "timezone": "America/Los_Angeles",
+      "units": "km",
+      "accepted_sessions": [
+        {
+          "id": "2026-11-03-a",
+          "date": "2026-11-03",
+          "target": "5 km",
+          "effort": "easy",
+          "status": "planned"
+        }
+      ],
+      "recovery": {
+        "baseline_weeks": 4,
+        "resting_hr": "at personal baseline",
+        "sleep": "at personal baseline"
+      },
+      "recent_running": "3 runs per week, 18 km/week for four weeks"
+    }
+  },
+  {
+    "id": "saved-target-new-conversation",
+    "skills": [
+      "post-run-debrief"
+    ],
+    "request": "Review yesterday's run.",
+    "context": {
+      "today": "2026-11-04",
+      "timezone": "America/Los_Angeles",
+      "units": "km",
+      "old_chat_prescription": "8 km",
+      "accepted_sessions": [
+        {
+          "id": "2026-11-03-a",
+          "date": "2026-11-03",
+          "target": "5 km",
+          "effort": "easy",
+          "status": "planned"
+        }
+      ],
+      "adjustments": [
+        {
+          "id": "c1",
+          "session_id": "2026-11-03-a",
+          "accepted_on": "2026-11-02",
+          "previous": "8 km",
+          "new": "5 km",
+          "reason": "athlete requested shorter run"
+        }
+      ],
+      "activity": {
+        "id": "w1",
+        "date": "2026-11-03",
+        "distance_km": 5,
+        "moving_minutes": 32
+      },
+      "athlete_report": "felt easy",
+      "source_coverage": "complete for activity"
+    }
+  },
+  {
+    "id": "unavailable-health-store",
+    "skills": [
+      "plan-builder"
+    ],
+    "request": "Build me a plan for consistency, three runs per week. Here is my manual log. Save the draft only after I accept it.",
+    "context": {
+      "timezone": "America/Los_Angeles",
+      "units": "km",
+      "available_days": [
+        "Tuesday",
+        "Thursday",
+        "Sunday"
+      ],
+      "profile_sources": [
+        "Apple Health",
+        "manual log"
+      ],
+      "available_tools": [
+        "local file read/write"
+      ],
+      "manual_log": {
+        "coverage": "athlete-confirmed complete for four weeks",
+        "weekly_km": [
+          15,
+          16,
+          15,
+          16
+        ],
+        "runs_per_week": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "longest_run_km": 6
+      },
+      "motivational_language": "off",
+      "today": "2026-10-23"
+    }
+  },
+  {
+    "id": "historical-route-closure",
+    "skills": [
+      "route-builder"
+    ],
+    "request": "Can I use my old creek loop for Sunday's long run?",
+    "context": {
+      "target": "8 km",
+      "location": "Synthetic Creek Park",
+      "route_library": [
+        {
+          "name": "Creek Loop",
+          "recorded_on": "2024-06-01",
+          "distance_km": 8,
+          "method": "recorded track",
+          "access_checked": null
+        }
+      ],
+      "official_notice": {
+        "source": "synthetic land-manager fixture",
+        "checked_on": "2026-11-06",
+        "status": "creek bridge closed through November 30; no crossing permitted"
+      },
+      "verified_alternatives": []
+    }
+  },
+  {
+    "id": "gpx-missing-time-and-duration-target",
+    "skills": [
+      "post-run-debrief"
+    ],
+    "request": "Review this exported run against my plan.",
+    "context": {
+      "timezone": "America/Los_Angeles",
+      "units": "km",
+      "accepted_sessions": [
+        {
+          "id": "2026-11-03-a",
+          "date": "2026-11-03",
+          "target": "30 min",
+          "effort": "easy",
+          "status": "planned"
+        }
+      ],
+      "export": {
+        "name": "run.gpx",
+        "athlete_confirmed_session_id": "2026-11-03-a",
+        "distance_km_derived": 4.8,
+        "timestamps": null,
+        "elevation": null
+      },
+      "athlete_report": null
+    }
+  }
+]
