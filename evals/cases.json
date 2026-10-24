@@ -305,5 +305,249 @@
       },
       "athlete_report": null
     }
+  },
+  {
+    "id": "journal-guided-plan-revision",
+    "skills": [
+      "running-journal",
+      "plan-builder"
+    ],
+    "request": "Start today's journal entry and use my journal to propose next week's plan changes.",
+    "context": {
+      "today": "2026-11-08",
+      "timezone": "America/Los_Angeles",
+      "units": "km",
+      "journal_preference": "after runs",
+      "motivational_language": "off",
+      "accepted_sessions": [
+        {
+          "id": "2026-11-08-a",
+          "date": "2026-11-08",
+          "type": "long run",
+          "target": "10 km",
+          "effort": "easy",
+          "status": "planned"
+        }
+      ],
+      "activity": {
+        "id": "w42",
+        "date": "2026-11-08",
+        "distance_km": 10,
+        "moving_minutes": 68,
+        "type": "run",
+        "coverage": "complete"
+      },
+      "athlete_report_for_today": null,
+      "existing_today_journal_entry": null,
+      "journal_entries": [
+        {
+          "date": "2026-11-01",
+          "session_id": "2026-11-01-a",
+          "body_notes": "Left calf tight, 3/10, eased after warm-up",
+          "sleep_energy": "Poor sleep before a work deadline",
+          "fueling": "Gel at 45 minutes caused nausea",
+          "takeaway": "Do not use that gel again without testing it on a shorter run"
+        },
+        {
+          "date": "2026-11-04",
+          "session_id": "2026-11-04-a",
+          "body_notes": "Left calf tight, 3/10, eased after warm-up",
+          "sleep_energy": "Still sleeping poorly this week",
+          "fueling": "No fuel on a short run; felt fine",
+          "takeaway": "Week feels heavier than the mileage suggests"
+        },
+        {
+          "date": "2026-11-06",
+          "session_id": "2026-11-06-a",
+          "body_notes": "Left calf tight, 2/10, eased after warm-up",
+          "sleep_energy": "Poor sleep; high work stress",
+          "fueling": "Breakfast before the run worked well",
+          "takeaway": "Life load is the limiter right now"
+        }
+      ],
+      "future_targets_status": "not yet revised"
+    }
+  },
+  {
+    "id": "debrief-journal-off",
+    "skills": [
+      "post-run-debrief"
+    ],
+    "request": "Review my run and save the debrief.",
+    "context": {
+      "today": "2026-11-08",
+      "timezone": "America/Los_Angeles",
+      "units": "km",
+      "motivational_language": "off",
+      "private_working_folder": "/synthetic/athlete",
+      "accepted_sessions": [
+        {
+          "id": "2026-11-08-a",
+          "date": "2026-11-08",
+          "target": "5 km",
+          "effort": "easy",
+          "status": "planned"
+        }
+      ],
+      "activity": {
+        "id": "w43",
+        "date": "2026-11-08",
+        "distance_km": 5,
+        "moving_minutes": 32,
+        "coverage": "complete"
+      },
+      "athlete_report": "Felt easy; no pain.",
+      "journal_exists": true,
+      "existing_journal_entry": {
+        "key": "2026-11-08-a/w43",
+        "feel": "not reported"
+      },
+      "journal_preference": "off"
+    }
+  },
+  {
+    "id": "debrief-journal-on-request",
+    "skills": [
+      "post-run-debrief"
+    ],
+    "request": "Review my run and save the debrief.",
+    "context": {
+      "today": "2026-11-08",
+      "timezone": "America/Los_Angeles",
+      "units": "km",
+      "motivational_language": "off",
+      "private_working_folder": "/synthetic/athlete",
+      "accepted_sessions": [
+        {
+          "id": "2026-11-08-a",
+          "date": "2026-11-08",
+          "target": "5 km",
+          "effort": "easy",
+          "status": "planned"
+        }
+      ],
+      "activity": {
+        "id": "w43",
+        "date": "2026-11-08",
+        "distance_km": 5,
+        "moving_minutes": 32,
+        "coverage": "complete"
+      },
+      "athlete_report": "Felt easy; no pain.",
+      "journal_exists": true,
+      "existing_journal_entry": {
+        "key": "2026-11-08-a/w43",
+        "feel": "not reported"
+      },
+      "journal_preference": "on request"
+    }
+  },
+  {
+    "id": "debrief-journal-after-runs",
+    "skills": [
+      "post-run-debrief"
+    ],
+    "request": "Review my run and save the debrief.",
+    "context": {
+      "today": "2026-11-08",
+      "timezone": "America/Los_Angeles",
+      "units": "km",
+      "motivational_language": "off",
+      "private_working_folder": "/synthetic/athlete",
+      "accepted_sessions": [
+        {
+          "id": "2026-11-08-a",
+          "date": "2026-11-08",
+          "target": "5 km",
+          "effort": "easy",
+          "status": "planned"
+        }
+      ],
+      "activity": {
+        "id": "w43",
+        "date": "2026-11-08",
+        "distance_km": 5,
+        "moving_minutes": 32,
+        "coverage": "complete"
+      },
+      "athlete_report": "Felt easy; no pain.",
+      "journal_exists": true,
+      "existing_journal_entry": {
+        "key": "2026-11-08-a/w43",
+        "feel": "not reported"
+      },
+      "journal_preference": "after runs"
+    }
+  },
+  {
+    "id": "journal-explicit-override",
+    "skills": [
+      "post-run-debrief",
+      "running-journal"
+    ],
+    "request": "Review my run and update its existing journal entry with my report. Keep my journal preference off.",
+    "context": {
+      "today": "2026-11-08",
+      "timezone": "America/Los_Angeles",
+      "units": "km",
+      "motivational_language": "off",
+      "private_working_folder": "/synthetic/athlete",
+      "accepted_sessions": [
+        {
+          "id": "2026-11-08-a",
+          "date": "2026-11-08",
+          "target": "5 km",
+          "effort": "easy",
+          "status": "planned"
+        }
+      ],
+      "activity": {
+        "id": "w43",
+        "date": "2026-11-08",
+        "distance_km": 5,
+        "moving_minutes": 32,
+        "coverage": "complete"
+      },
+      "athlete_report": "Felt easy; no pain.",
+      "journal_exists": true,
+      "existing_journal_entry": {
+        "key": "2026-11-08-a/w43",
+        "feel": "not reported"
+      },
+      "journal_preference": "off"
+    }
+  },
+  {
+    "id": "race-fueling-journal",
+    "skills": [
+      "race-prep"
+    ],
+    "request": "Propose race-day fueling using what has worked in my training. Do not save a revised race plan yet.",
+    "context": {
+      "today": "2026-11-08",
+      "timezone": "America/Los_Angeles",
+      "units": "km",
+      "private_working_folder": "/synthetic/athlete",
+      "journal_preference": "on request",
+      "motivational_language": "off",
+      "goal": "half marathon on 2026-11-15",
+      "journal_entries": [
+        {
+          "date": "2026-10-25",
+          "fueling": "Familiar drink B tolerated during the long run."
+        },
+        {
+          "date": "2026-11-01",
+          "fueling": "Familiar drink B tolerated again; experimental gel A caused nausea.",
+          "takeaway": "Do not try gel A on race day."
+        }
+      ],
+      "journal_standing_sections": {
+        "fueling_playbook": "Drink B worked on October 25 and November 1; gel A has one unsuccessful trial."
+      },
+      "journal_write_requested": false,
+      "accepted_plan_status": "unchanged",
+      "official_event_details": "not supplied; no event lookup needed for this fueling-only request"
+    }
   }
 ]

@@ -11,6 +11,9 @@ def bundled_resources(root=ROOT):
         if skill.parent.name == 'plan-builder':
             for template in sorted((root / 'templates').glob('*.md')):
                 yield template, skill.parent / 'assets' / template.name
+        if skill.parent.name == 'running-journal':
+            template = root / 'templates/journal.template.md'
+            yield template, skill.parent / 'assets' / template.name
 
 def sync(check=False):
     stale = []

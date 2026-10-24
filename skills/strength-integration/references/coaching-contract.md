@@ -29,3 +29,16 @@ Read these rules before using any skill. Resolve file paths from the athlete's c
 - In later conversations, read the saved ledger before using remembered chat instructions. If chat and file disagree, surface the discrepancy; do not silently overwrite an accepted target. Match actual runs using activity IDs and local dates, asking when multiple matches remain plausible.
 - Compare actuals against accepted targets as they stood before the session. Preserve that prescription after completion. Distinguish planned, completed, skipped, rest, and unknown; keep cancellations and accepted target revisions in the adjustments log.
 - Re-read current files before writing. Preserve unrelated athlete edits. If files cannot be updated, return the exact proposed patch and say it was not saved.
+
+## Journal
+
+- Check the profile's journal preference before reading, prompting for, creating, or updating journal content. A file's existence is not consent to keep updating it. Default to `on request` when unset:
+  - `off`: do not read or write the journal or prompt for journal entries during ordinary coaching.
+  - `on request`: existing entries may inform coaching, but create or update entries and ask journal-specific questions only when the athlete explicitly requests journaling.
+  - `after runs`: during a requested post-run review, draft or update the linked journal entry without another confirmation. This preference does not schedule background work.
+  - An explicit current request to read or write the journal authorizes that operation even when set to `off`; it does not change the standing preference. A normal debrief request alone does not authorize journaling. Continue ordinary plan observations independently of journal preferences.
+
+- When the athlete keeps `journal.md`, treat it as the athlete-owned narrative record for subjective context and lessons. The plan remains authoritative for accepted targets, session status, structured observations, and adjustments; the journal must link to those records by local date, session ID, and canonical activity ID when known rather than create a competing prescription.
+- When journal reading is permitted by the preference above, read relevant recent entries and standing sections before plan building or revision, check-ins, debriefs, and race preparation. Use reported feel, body notes, sleep and energy, life context, fueling outcomes, and repeated lessons as evidence when formulating one reconciled proposal. A journal entry does not change a target by itself; follow the normal proposal, acceptance, and adjustment-log rules.
+- When journal writing is permitted by the preference above, the agent may draft objective entry scaffolding from confirmed source data and save the athlete's own report without separate approval. Ask only a few material subjective questions. Never invent feel, symptoms, sleep, fueling, or life context. Preserve athlete wording for reports and takeaways, and label interpretation as interpretation.
+- Maintain journal rollups and playbooks only from entries actually present, with dates or entry keys that support each distilled claim. Journal body notes are observations, not diagnoses. Do not include private journal content or exact home locations in public commits or shared output.
